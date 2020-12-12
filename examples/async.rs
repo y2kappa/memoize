@@ -38,12 +38,10 @@ async fn get_employee(employee_id: i32) -> Employee {
     );
     println!("Calling {}", url);
 
-    let employee: Employee = reqwest::get(&url)
+    reqwest::get(&url)
         .await
         .unwrap()
         .json::<Employee>()
         .await
-        .unwrap();
-
-    employee
+        .unwrap()
 }
