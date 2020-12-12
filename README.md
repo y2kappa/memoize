@@ -21,3 +21,9 @@ Loaded "100-200" from cache with value 20000
 Loaded "100-200" from cache with value 20000
 20000
 ```
+
+## TODO
+- [ ] measure performance
+- [ ] ensure noop when function does not have an output
+- [ ] dynamically rename cache to be custom to that function
+- [ ] TTL cache maybe
